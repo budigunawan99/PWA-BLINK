@@ -1,0 +1,194 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+nav ul a {
+  color: black;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+nav a {
+  color: black;
+}
+
+footer {
+  padding: 20px;
+  color: black;
+  background-color: #f48fb1;
+  text-align: center;
+  font-size: 18px;
+}
+
+.jumbotron {
+  width: 100%;
+  min-height: 300px;
+  position: relative;
+  background-image: linear-gradient(180deg, #f48fb1 10%, #f8bacf 74%);
+  padding: 0;
+  z-index: 0;
+}
+
+.jumbotron::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 250px;
+  background-image: url("../img/gelombang3.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.header-text {
+  padding: 100px;
+  text-align: center;
+  color: black;
+  z-index: 1;
+}
+
+.jumbotron p {
+  font-size: 20px;
+  font-style: italic;
+}
+
+h2 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  color: black;
+}
+
+hr {
+  width: 15%;
+  border: 2px solid black;
+  margin-top: -15px;
+  border-radius: 5px;
+}
+
+article {
+  padding: 50px;
+}
+
+article p {
+  font-size: 20px;
+}
+
+.pt-50 {
+  padding-top: 50px;
+}
+
+.mt-50 {
+  margin-top: 50px;
+}
+
+.center {
+  text-align: center;
+}
+
+.img-bp {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+}
+
+.img-group-bp {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+#about-blackpink p,
+#about-creator p,
+#member p{
+  text-align: justify;
+}
+
+#about-blackpink p:first-letter,
+#about-creator p:first-letter,
+#member p:first-letter{
+  font-size: 5.5em;
+  float: left;
+  margin-top: -0.4em;
+  margin-bottom: -0.4em;
+}
+
+#about-blackpink a,
+#about-creator a,
+#member a {
+  color: #01547e;
+  font-size: 20px;
+}
+
+#about-creator .card.horizontal .card-image{
+  max-width: 20%;
+}
+
+#member .card.horizontal .card-image{
+  max-width: 30%;
+}
+
+@media (max-device-width: 600px) {
+  .img-logo {
+    width: 150px;
+  }
+  .icecream {
+    width: 150px;
+  }
+  .header-text {
+    padding: 50px;
+  }
+  article h4 {
+    display: none;
+  }
+  article {
+    padding: 10px;
+  }
+}
+
+@font-face {
+  font-family: "Material Icons";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../iconfont/material-design-icons-3.0.2/iconfont/MaterialIcons-Regular.eot); /* For IE6-8 */
+  src: local("Material Icons"), local("MaterialIcons-Regular"),
+    url(../iconfont/material-design-icons-3.0.2/iconfont/MaterialIcons-Regular.woff2) format("woff2"),
+    url(../iconfont/material-design-icons-3.0.2/iconfont/MaterialIcons-Regular.woff) format("woff"),
+    url(../iconfont/material-design-icons-3.0.2/iconfont/MaterialIcons-Regular.ttf) format("truetype");
+}
+
+.material-icons {
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px; /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: "liga";
+}
